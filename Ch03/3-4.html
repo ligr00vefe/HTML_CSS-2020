@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3-4</title>
+        <style>
+            /* 속성 선택자 */
+            form > input[name=uid] {
+                width: 200px;
+                height: 30px;
+            }
+
+            form > input[name=pass] {
+                background: yellow;
+            }
+
+            form > input[type=submit] {
+                color: white;
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>4. CSS 속성 선택자</h3>
+
+        <form action="#">
+            <h3>로그인</h3>
+            <input type="text" name="uid" placeholder="아이디 입력">
+            <input type="text" name="pass" placeholder="비밀번호 입력">
+            <input type="submit" value="로그인하기">
+        </form>
+    </body>
+</html>

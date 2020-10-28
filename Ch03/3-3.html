@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3-3</title>
+        <style>
+            /* 구조선택자 */
+            ul:nth-child(2) > li:first-child {
+                color: blue;
+            }
+
+            ul:nth-child(2) > li:nth-child(4) {
+                color: green;
+            }
+            
+            /*
+                선택자:nth-of-type() : 이름이 같은 태그의 형제들만 계산해서 1(첫째), 2(둘째), 3(셋째)를 선택할 수 있다.
+                                       nth-child()는 부모 안의 자식들은 태그에 관계없이 계산하기 때문에 헷갈릴 수 있다.
+            */
+            ul:nth-of-type(2) > li:nth-child(2) {
+                color: red;
+            }
+            
+            
+
+        </style>
+    </head>
+    <body>        
+        <h3>3. CSS 구조선택자</h3>
+
+        <ul>
+            <li>서울</li>
+            <li>대전</li>
+            <li>대구</li>
+            <li>부산</li>
+            <li>광주</li>
+        </ul>
+        <ul>
+            <li>한국</li>
+            <li>미국</li>
+            <li>일본</li>
+            <li>중국</li>
+            <li>독일</li>
+        </ul>
+
+    </body>
+</html>

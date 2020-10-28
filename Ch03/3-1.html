@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3-1</title>
+        <style>
+            /* 전체 선택자 */
+            * {
+                color: red;
+            }
+
+
+            /* 태그 선택자 */
+            h3 {
+                color: blue;
+            }
+            h4 { animation: blink 1s linear infinite;}
+            @keyframes blink {
+                0% {opacity: 1;}
+                50% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+            h4:nth-child(2) { animation-duration: 0.2s;}
+            h4:nth-child(3) { animation-duration: 0.3s;}
+            h4:nth-child(4) { animation-duration: 0.4s;}
+            h4:nth-child(5) { animation-duration: 0.5s;}
+            h4:nth-child(6) { animation-duration: 0.6s;}
+
+
+            /* 클래스 선택자 */
+            .tit { color: orange;}
+
+
+            /* 아이디 선택자 */
+            #txt1 {
+                color: violet;
+            }
+            #txt2 {
+                color: yellow;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h3>1. CSS 선택자</h3>
+
+        <h4>Hello, 안녕</h4>
+        <h4 class="tit">Hello, 안녕</h4>
+        <h4 class="tit">Hello, 안녕</h4>
+        <h4 id="txt1">Hello, 안녕</h4>
+        <h4 id="txt2">Hello, 안녕</h4>
+
+    </body>
+</html>
