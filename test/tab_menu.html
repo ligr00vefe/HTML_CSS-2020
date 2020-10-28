@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        ul > li {display: inline;}
+        .box {
+            position:absolute;
+            display: none;
+            left: 100px;
+            top: 100px;
+            width: 600px; 
+            height: 500px;
+            line-height: 500px;
+            font-size: 100px;
+            text-align: center;
+            color: white
+        }
+        .box1 {background-color: red;}
+        .box2 {background-color: blue;}
+        .box3 {background-color: green;}
+        .box4 {background-color: pink;}
+        .box5 {background-color: yellow;}
+
+        .box.on {
+            display: block;
+        }
+
+        .indicator { 
+            position: absolute;
+            width: 700px; 
+            height: 100px;
+            bottom: 100px;
+            right: 50px;
+        }
+
+        .indicator > li {
+            border: 1px solid black; 
+            padding: 40px 50px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .indicator > li.in1 {}
+        .indicator > li.in2 {}
+        .indicator > li.in3 {}
+        .indicator > li.in4 {}
+        .indicator > li.in5 {}
+    </style>
+    <script>
+        $(document).ready(function(){
+            
+            $('.indicator > li').mouseenter(function(){     
+                var liCount = $(this).html();                          
+                $('body > div').eq(liCount-1).addClass('on');
+            });
+            $('.indicator > li').mouseleave(function(){
+                var liCount = $(this).html(); 
+                $('body > div').eq(liCount-1).removeClass('on');
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+    <div class="box box1 on">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+
+    <ul class="indicator">
+        <li class="in1">1</li>
+        <li class="in2">2</li>
+        <li class="in3">3</li>
+        <li class="in4">4</li>
+        <li class="in5">5</li>
+    </ul>
+</body>
+</html>
