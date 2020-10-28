@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>2-3</title>
+    </head>
+    <body>
+        <h3>3. HTML5 테이블 태그</h3>
+
+        <table border="1">
+            <tr><!-- Table Row -->
+                <th>이름</th><!-- Table Header -->
+                <th>휴대폰</th>
+                <th>주소</th>
+            </tr>
+            <tr>
+                <td>김유신</td><!-- Table Data -->
+                <td>010-1234-1111</td>
+                <td>김해</td>
+            </tr>
+            <tr>
+                <td>김춘추</td>
+                <td>010-1234-1112</td>
+                <td>경주</td>
+            </tr>
+            <tr>
+                <td>장보고</td>
+                <td>010-1234-1113</td>
+                <td>완도</td>
+            </tr>
+
+        </table><hr />
+
+        <h4>테이블 셀 병합</h4>
+
+        <table border="1">
+            <tr>
+                <td colspan="2">1 x 1</td>
+                <td rowspan="2">1 x 3</td>
+                <td rowspan="5">1 x 4</td>
+            </tr>
+            <tr>
+                <td colspan="2">2 x 1</td>
+            </tr>
+            <tr>
+                <td>3 x 1</td>
+                <td>3 x 2</td>
+                <td>3 x 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">4 x 1</td>
+            </tr>
+            <tr>
+                <td>5 x 1</td>
+                <td>5 x 2</td>
+                <td>5 x 3</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
