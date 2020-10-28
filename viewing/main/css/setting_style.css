@@ -1,0 +1,70 @@
+/* Header */
+header nav {
+    background: #191919;
+}
+
+/* Setting */
+#setting {
+	padding: 150px 0 70px;
+    background: #fff;
+}
+.setting_wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+#setting section {
+    width: 100%;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #ddd;
+}
+#setting section:last-child {
+	border-bottom: none;
+}
+#setting h3 {
+    font-size: 1.2em;
+    padding: 2em 0 1em;
+}
+#setting ul {}
+#setting ul > li {
+    display: block;
+    padding: .5em;
+}
+#setting ul > li > h5 {
+    display: inline-block;
+    vertical-align: top;
+    width: 12em;
+    font-size: 1.1em;
+    color: #555;
+}
+#setting ul > li > ol { display: inline-block; color: #191919;}
+#setting ul > li > ol > li { padding: 0 .2em .5em;}
+#setting ul > li > ol > li > button {
+    padding: .3em .5em;
+    font-size: .9em;
+    color: #191919;
+}
+#setting ul > li > ol > li > button > i {
+    vertical-align: middle;
+    padding-left: .5em;
+    color: #191919;
+}
+#setting ul > li > ol > li > h6 { display: inline-block; font-size: 1em; padding-right: 1em;}
+#setting ul > li > ol > li > input[type="password"] { padding: .3em; font-size: 1em; margin-bottom: .5em;}
+#setting ul > li > ol > li > span { color: red; font-size: .8em; padding-left: 2em;}
+#setting ul > li > ol > li > h6 > input[type="checkbox"] { margin-left: .5em; vertical-align: middle;}
+#setting ul > li > ol > li > p { font-size: .85em; color: #777; padding: 1em 0;}
+
+#setting section form > input[type="submit"] {
+    padding: .7em 1.5em;
+    font-size: 1.2em;
+    margin: 3em 0 0 12em;
+    background: #007fee;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 2em;
+    cursor: pointer;
+}
+#setting section form > input[type="submit"]:hover {
+    background: #aaa;
+    transition: all .3s;
+}

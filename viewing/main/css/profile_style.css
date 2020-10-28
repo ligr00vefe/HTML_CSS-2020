@@ -1,0 +1,106 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+strong {
+    font-weight: bold;
+}
+
+/* Common */
+#wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #191919;
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    font-size: 14px;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    width: 100%;
+    height: 72px;
+    padding: 0 4%;
+}
+header > .logo {
+    float: left;
+}
+header > .logo > a {
+    position: relative;
+    z-index: 10001;
+    float: left;
+    width: 99px;
+    height: 72px;
+}
+header > .logo > a > img {
+    padding: 10px;
+}
+
+/* 프로필 페이지 */
+#profile { width: 100vw; background: #191919; color: #fff; }
+#profile .profile_wrapper { width: 40vw; margin: 0 auto; padding-top: 10vw; }
+#profile h1 { text-align: center; font-size: 2.5vw; }
+#profile section {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1.5vw;
+}
+#profile .profile_left { width: 33%; text-align: center; padding: 0px 1vw; }
+#profile .profile_right { width: 65%;}
+.profile_left img { display: inline-block; width: 10vw; height: 10vw; border: 5px solid #777; border-radius: 50%; overflow: hidden; }
+.profile_left button {
+    width: 7vw;
+    border: 1px solid #555;
+    border-radius: .2vw;
+    color: #999;
+    font-size: .8vw;
+    text-align: center;
+    padding: .5vw;
+    cursor: pointer;
+    color: #555;
+    background: #191919;
+    margin-top: 1vw;
+}
+.profile_left button:hover {
+    color: #999;
+    border: 1px solid #999;
+}
+.profile_right h3 { font-size: 1.1vw; }
+.profile_right input {
+    width: 20vw;
+    font-size: 1.1vw;
+    padding: .3vw .2vw;
+    margin: .8vw 0 .5vw;
+}
+.profile_right span { display: block; font-size: .7vw; color: #888;}
+#profile div { width: 100%; }
+.profile_bottom { margin-top: 2vw; padding: 2vw 2vw 0 14vw; border-top: 1px solid #777; }
+.profile_bottom button {
+    padding: .3vw .5vw;
+    margin-right: .5vw;
+    font-size: .8vw;
+    background: #ddd;
+    cursor: pointer;
+}
+.profile_bottom button:hover {
+    background: #f24d4d;
+}

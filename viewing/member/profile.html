@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뷰잉::프로필</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo">
+               <a href="../main/main.html"><img src="../img/header_logo.png" alt="로고이미지"></a>
+            </div>
+        </header>
+        <main id="profile">
+            <div class="profile_wrapper">
+            	<h1>프로필 수정</h1>
+            	<form action="#">
+
+            		<section class="profile_left clearfix">
+            			<img src="../main/img/profile_img.png" alt="프로필 이미지">
+						<button>이미지 변경</button>
+            		</section>
+
+            		<section class="profile_right clearfix">
+            			<h3>프로필명</h3>
+            			<input type="text" value="아이디">
+            			<span>이름은 최소 2자, 최대 20자 까지 입력이 가능합니다.</span>
+            			<span>수정한 정보는 뷰잉의 다른 서비스에서도 동일하게 표시됩니다.</span>
+            		</section>
+
+            		<div class="profile_bottom">
+            			<button>완료</button>
+            			<button>취소</button>
+            		</div>
+            	</form>
+            </div><!-- //.profile_wrapper -->
+        </main><!-- //#profile -->
+    </div>
+</body>
+</html>
