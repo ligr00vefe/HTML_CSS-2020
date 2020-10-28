@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4-3</title>
+        <style>
+            /*
+                CSS background 속성
+            */
+
+            .box1 {
+                width: 100%;
+                height: 200px;
+                border: 1px solid black;
+                margin-top: 10px;                
+            }
+            .box1-1 {background-image: url('./img/bg_front.png');}      /* 이미지 축소 없이 원본 사이즈로 불러오기 때문에 큰 이미지의 경우 좌상단만 보인다. */
+            .box1-2 {background-image: url('../Ch04/img/bg_back.png');}
+            .box1-3 {background-image: url('../Ch04/img/balloon.jpg');}     /* 사이즈가 작은 이미지의 경우 이미지가 반복 된다. */
+
+            .box2 {
+                display: inline-block;
+                width: 400px;
+                height: 200px;
+                border: 1px solid black;
+                background-image: url('./img/bg_front.png');
+            }
+            .box2-1 {background-size: 100px;}
+            .box2-2 {background-size: 100px 100px;}
+            .box2-3 {background-size: 100%;}    /* 가로 사이즈 100%     /     100% 100%는 가로 세로 100% */
+
+            .box3 {
+                display: inline-block;
+                width: 30%;
+                height: 300px;
+                border: 1px solid black;
+            }
+            .box3-1 {
+                background-image: url('./img/repeat-x.png');
+                background-repeat: repeat-x;
+            }
+            .box3-2 {
+                background-image: url('./img/repeat-y.png');
+                background-repeat: repeat-y;
+            }
+            .box3-3 {
+                background-image: url('./img/poodle.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .box4 {
+                display: inline-block;
+                width: 360px;
+                height: 200px;
+                border: 1px solid black;
+                background-image: url('./img/balloon.jpg');
+                background-size: 60px;
+                background-repeat: no-repeat;
+            }
+            .box4-1 {background-position: left;}
+            .box4-2 {background-position: right;}
+            .box4-3 {background-position: top;}
+            .box4-4 {background-position: bottom;}
+            .box4-5 {background-position: center}
+            .box4-6 {background-position: 100px;}       /* 위치 기준이 좌상단(0,0) */
+            .box4-7 {background-position: 100%;}
+            .box4-8 {background-position: 100px 100px;}
+
+            .box5 {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                border : 1px solid black;
+            }
+            .box5-1 {background-color: green;}
+            .box5-2 {background-color: #00ff00;}
+            .box5-3 {background-color: rgb(0, 255, 0);}
+
+            .box6 {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;    
+            }
+            .box6-1 {
+                background-color: yellow;
+                background-image: url('./img/poodle.jpg');
+                background-size: 100px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .box6-2 {
+                background: yellow url('./img/poodle.jpg') center /100px no-repeat;
+            }
+            .box6-3 {
+                background: url('./img/balloon.jpg') no-repeat;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>3. CSS 배경속성</h3>
+
+        <h4>1) background-image 속성</h4>
+        <section>
+            <div class="box1 box1-1"></div>
+            <div class="box1 box1-2"></div>
+            <div class="box1 box1-3"></div>
+        </section>
+
+        <h4>2) background-size 속성</h4>
+        <section>
+            <div class="box2 box2-1"></div>
+            <div class="box2 box2-2"></div>
+            <div class="box2 box2-3"></div>
+        </section>
+
+        <h4>3) background-repeat 속성</h4>
+        <section>
+            <div class="box3 box3-1"></div>
+            <div class="box3 box3-2"></div>
+            <div class="box3 box3-3"></div>
+        </section>
+
+        <h4>4) background-position 속성</h4>
+        <section>
+            <div class="box4 box4-1"></div>
+            <div class="box4 box4-2"></div>
+            <div class="box4 box4-3"></div>
+            <div class="box4 box4-4"></div>
+            <div class="box4 box4-5"></div>
+            <div class="box4 box4-6"></div>
+            <div class="box4 box4-7"></div>
+            <div class="box4 box4-8"></div>
+        </section>
+
+        <h4>5) background-color 속성</h4>
+        <section>
+            <div class="box5 box5-1"></div>
+            <div class="box5 box5-2"></div>
+            <div class="box5 box5-3"></div>
+        </section>
+
+        <h4>6) background 통합속성</h4>
+        <section>
+            <div class="box6 box6-1"></div>
+            <div class="box6 box6-2"></div>
+            <div class="box6 box6-3"></div>
+        </section>
+
+
+    </body>
+</html>

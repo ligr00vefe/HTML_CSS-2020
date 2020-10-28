@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4-7</title>
+        <style>
+            section {
+                display: inline-block;                
+            }
+
+            section > div {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+            }
+
+            .box1 > div {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                float: right;
+            }            
+            .box2 > div {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: green;
+            }
+            .box3 > div {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                right: 0;
+                top: 0;
+                background-color: green;
+            }
+            .box3 > div > div {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                right: 0;
+                bottom: 0;
+                background-color: blue;
+            }
+            .box4 > div{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                left: 0;
+                bottom: 0;
+                background-color: green;
+            }
+            .box4 > div > div {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 0;
+                bottom: 0;
+                background-color: blue;
+            }
+            .box5 > div {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                left: 50%;
+                margin-left: -100px;
+                background-color: green;
+            }
+            .box5 > div > div {   
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 50%;
+                margin-left: -50px;
+                top: 50%;
+                margin-top: -50px;
+                background-color: blue;
+            }
+            .box6 > div {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                left: 50%;
+                margin-left: -100px;
+                top: 50%;
+                margin-top: -100px;
+                background-color: green;
+            }
+            .box6 > div > div {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 50%;
+                margin-left: -50px;
+                top: 50%;
+                margin-top: -50px;                
+                background-color: blue;
+            }            
+            .box7 > div:nth-child(1) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 50%;
+                margin-top: -50px;
+                background-color: green;
+            }
+            .box7 > div:nth-child(2) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 50%;
+                margin-left: -50px;
+                top: 0;
+                background-color: red;
+            }
+            .box7 > div:nth-child(3) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 50%;
+                margin-top: -50px;
+                right: 0;
+                background-color: blue;
+            }
+            .box7 > div:nth-child(4) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 50%;
+                margin-left: -50px;
+                bottom: 0;
+                background-color: orange;
+            }
+            
+            .box8 > div:nth-child(1) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 0;
+                background-color: red;
+            }
+            .box8 > div:nth-child(2) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                right: 0;
+                background-color: blue;
+            }
+            .box8 > div:nth-child(3) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                left: 50%;
+                margin-left: -50px;
+                top: 50%;
+                margin-top: -50px; 
+                background-color: green;
+            }
+            .box8 > div:nth-child(4) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                bottom: 0;
+                background-color: yellow;
+            }
+            .box8 > div:nth-child(5) {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                right: 0;
+                bottom: 0;
+                background-color: magenta;
+            }
+            .box9 > div {
+                float: left;
+                width: 100px;
+                height: 100px;
+            }
+            .box9 > div:nth-child(1) {
+                background-color: red;
+            }
+            .box9 > div:nth-child(2) {
+                background-color: green;
+            }
+            .box9 > div:nth-child(3) {
+                clear: both;
+                background-color: blue;
+            }
+            .box10 > div {
+                float: right;
+                width: 100px;
+                height: 100px;
+            }
+            .box10 > div:nth-child(1) {
+                background-color: green;
+            }
+            .box10 > div:nth-child(2) {
+                background-color: red;
+            }
+            .box10 > div:nth-child(3) {
+                clear: both;
+                background-color: blue;
+            }
+            .box11 > div {
+                float: left;
+                width: 100px;
+                height: 100px;
+            }
+            .box11 > div:nth-child(1) {
+                background-color: red;
+            }
+            .box11 > div:nth-child(2) {
+                background-color: green;
+            }
+            .box11 > div:nth-child(3) {
+                background-color: blue;
+            }
+            .box11 > div:nth-child(4) {
+                clear: both;
+                background-color: gray;
+            }
+            .box11 > div:nth-child(5) {
+                background-color: yellow;
+            }
+            .box11 > div:nth-child(6) {
+                clear: both;
+                background-color: purple;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h3>7. 위치 연습문제</h3>
+
+        <section>
+            <h4>1번</h4>
+            <div class="box1">
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <h4>2번</h4>
+            <div class="box2">
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <h4>3번</h4>
+            <div class="box3">
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h4>4번</h4>
+            <div class="box4">
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h4>5번</h4>
+            <div class="box5">
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h4>6번</h4>
+            <div class="box6">
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h4>7번</h4>
+            <div class="box7">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <h4>8번</h4>
+            <div class="box8">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <h4>9번</h4>
+            <div class="box9">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <h4>10번</h4>
+            <div class="box10">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <h4>11번</h4>
+            <div class="box11">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </body>
+</html>
