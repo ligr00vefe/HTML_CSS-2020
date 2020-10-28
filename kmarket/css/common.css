@@ -1,0 +1,56 @@
+#top {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    margin-left: 600px;
+    display: none;
+    width: 42px;
+    height: 42px;
+    background-image: url('../img/top.png');
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+  }
+  
+  h6.rating {
+    font-size: 11px;
+    background-image: url('../img/rating_star.png');
+    background-repeat: no-repeat;
+    background-position: 36px 0px;
+    background-size: auto 100%;
+  }
+  h6.rating.star1 {width: 50px;}
+  h6.rating.star3 {width: 78px;}
+  h6.rating.star2 {width: 64px;}
+  h6.rating.star4 {width: 91px;}
+  h6.rating.star5 {width: 106px;}
+  
+  h5.rating {
+    width: 150px;
+    height: 20px;
+    font-size: 0px;
+    background-image: url(../img/ico_rating_star.png);
+    background-repeat: no-repeat;
+    background-position: 36px 0px;
+    text-indent: 86px;
+  }
+  h5.rating.star1 {background-position: 0 -40px;}
+  h5.rating.star2 {background-position: 0 -80px;}
+  h5.rating.star3 {background-position: 0 -120px;}
+  h5.rating.star4 {background-position: 0 -160px;}
+  h5.rating.star5 {background-position: 0 -200px;}
+  
+  .badge {
+    font-size: 0;
+    width: 80px;
+    height: 19px;
+    background-repeat: no-repeat;
+  }
+  
+  .badge.power {background-image: url('../img/ico_power_dealer.gif');}
+  .badge.great {background-image: url('../img/ico_great_seller.gif');}
+  .badge.power.great {
+    background: url('../img/ico_power_dealer.gif') no-repeat, url('../img/ico_great_seller.gif') no-repeat 63px;
+    width: 160px;
+  }
+  
